@@ -48,7 +48,7 @@ function App() {
     : "#36454F"; /*"#292b2c"*/
   return (
     <>
-      <Router>
+      <Router basename="/textutils">
         <Navbar bar={changemode} mode={mode}></Navbar>
         <Routes>
           <Route path="/about" element={<About />}></Route>
