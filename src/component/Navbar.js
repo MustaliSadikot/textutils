@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import About from '../pages/About'
 
 function Navbar(props) {
     const mode=props.mode
   return (
     <nav className={`navbar navbar-expand-lg navbar-${mode ? "light" : "dark"} bg-${mode ? "light" : "dark"}`}>
         <div className="container-fluid">
-          <Link className={`navbar-brand text-${mode ? "dark" : "light"}`} to="/">
+          <Link className={`navbar-brand text-${mode ? "dark" : "light"}`}>
             TextUtils
           </Link>
           <button
@@ -24,7 +23,7 @@ function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className={`text-${mode ? "dark" : "light"} nav-link active  aria-current="page"`}to="/home">
+                <Link className={`text-${mode ? "dark" : "light"} nav-link active  aria-current="page"`}to="/">
                   Home
                 </Link>
               </li>

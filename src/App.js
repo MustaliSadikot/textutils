@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import Navbar from "./component/Navbar";
@@ -54,7 +53,7 @@ function App() {
         <Routes>
           <Route path="/about" element={<About />}></Route>
           <Route
-            path="/home"
+            path="/"
             element={
               <div className={`container mt-5 text-${mode ? "dark" : "light"}`}>
                 <h1 className="mt-5">Enter Text Here :</h1>
