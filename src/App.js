@@ -54,7 +54,7 @@ function App() {
         <Routes>
           <Route path="/about" element={<About />}></Route>
           <Route
-            path="/"
+            path="/home"
             element={
               <div className={`container mt-5 text-${mode ? "dark" : "light"}`}>
                 <h1 className="mt-5">Enter Text Here :</h1>
